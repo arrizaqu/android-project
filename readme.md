@@ -18,7 +18,7 @@
 		* ViewPager File XML (View)
 		* Fragement Class
 		* MainActivityViewPager extends FragmentStatePagerAdapter
-		* Connect MainActivity with MainActivityViewPager
+	* Connect MainActivity with MainActivityViewPager
 		
 ## Structure File : 
 	- java

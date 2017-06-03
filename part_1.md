@@ -95,8 +95,7 @@
 	</LinearLayout>
 		
 ### FRAGMENT CLASS 
-#### A. CREATE Class Fragment : 
-##### 1. fragments.AboutUs.java
+#### 1. fragments.AboutUs.java
 	public class FragmentAboutUs extends Fragment {
 
 		public static FragmentAboutUs newInstance(){
@@ -110,7 +109,7 @@
 		}
 	}
 
-##### 2. fragments.Rush.java
+#### 2. fragments.Rush.java
 	public class FragmentRush extends Fragment {
 
 		public static FragmentRush newInstance(){
@@ -123,7 +122,7 @@
 		}
 	}
 	
-##### 3. fragments.MeetABrow.java
+#### 3. fragments.MeetABrow.java
 	public class MeetABrow extends Fragment{
 		public static MeetABrow newInstance(){
 			return new MeetABrow();
@@ -136,8 +135,8 @@
 		}
 	}
 			
-#### B. MainActivityViewPager
-##### File : views.MainActivityViewPagerAdapter.java
+### MainActivityViewPager
+#### File : views.MainActivityViewPagerAdapter.java
 	public class MainActivityViewPagerAdapter extends FragmentStatePagerAdapter {
 		public MainActivityViewPagerAdapter(FragmentManager fm) {
 			super(fm);
@@ -191,8 +190,8 @@
 	}
 
 			
-#### C. Connect MainActivity with MainActivityViewPager 
-##### File : activity.MainActivity.java 
+### Connect MainActivity with MainActivityViewPager 
+#### File : activity.MainActivity.java 
 	public class MainActivity extends AppCompatActivity {
 	   // @Bind
 		@BindView(R.id.activity_main_viewPager)
