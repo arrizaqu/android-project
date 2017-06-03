@@ -20,7 +20,7 @@
 
 ## CREATE FRAGMENT VIEWPAGER
 ### ViewPager File XML (View)
-	* Fragment_about_us.xml
+#### Fragment_about_us.xml
 	* Fragment_rush.xml 
 	* fragment_meet_a_brow.xml
 		
