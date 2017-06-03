@@ -74,21 +74,44 @@
 ##### 1. fragments.AboutUs.java
 	public class FragmentAboutUs extends Fragment {
 
-    public static FragmentAboutUs newInstance(){
-        return new FragmentAboutUs();
-    }
+		public static FragmentAboutUs newInstance(){
+			return new FragmentAboutUs();
+		}
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_about_us, container, false);
-        return rootView;
-    }
-}
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_about_us, container, false);
+			return rootView;
+		}
+	}
 
-			* fragments.Rush.java
-			* fragments.MeetABrow.java
+##### 2. fragments.Rush.java
+	public class FragmentRush extends Fragment {
+
+		public static FragmentRush newInstance(){
+			return new FragmentRush();
+		}
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_rush, container, false);
+			return rootView;
+		}
+	}
+	
+##### 3. fragments.MeetABrow.java
+	public class MeetABrow extends Fragment{
+		public static MeetABrow newInstance(){
+			return new MeetABrow();
+		}
+
+		@Override
+		public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
+			View rootView = inflater.inflate(R.layout.fragment_meet_a_brow, container, false);
+			return rootView;
+		}
+	}
 			
-#### B. MainActivityViewPager extends FragmentStatePagerAdapter
+#### B. MainActivityViewPager
 		* override : 
 			* getItem
 			* getCount
