@@ -17,7 +17,7 @@
 	* Create Fragment ViewPager
 		* ViewPager File XML (View)
 		* Fragement Class
-		* MainActivityViewPager extends FragmentStatePagerAdapter
+	* MainActivityViewPager extends FragmentStatePagerAdapter
 	* Connect MainActivity with MainActivityViewPager
 		
 ## Structure File : 
