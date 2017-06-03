@@ -36,26 +36,66 @@
 			android:textSize="32dp"
 			android:layout_height="wrap_content" />
 	</LinearLayout>
-		
-#### Fragment_about_us.xml
-#### Fragment_rush.xml 
-#### fragment_meet_a_brow.xml
+	
+#### 2. Fragment_rush.xml 
+	<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		>
+
+		<TextView
+			android:id="@+id/rush"
+			android:text="rush"
+			android:layout_width="wrap_content"
+			android:textSize="32dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+#### 3. fragment_meet_a_brow.xml
+	<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		>
+
+		<TextView
+			android:id="@+id/meet_a_brow"
+			android:text="meet a brow"
+			android:layout_width="wrap_content"
+			android:textSize="32dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
 		
 ### FRAGMENT CLASS 
-#### CREATE Class Fragment : 
-			* /package_name/activities/main_activity.java
-			* /package_name/fragments/AboutUs.java
-			* /package_name/fragments/Rush
-			* /package_name/fragments/MeetABrow
+#### A. CREATE Class Fragment : 
+##### 1. fragments.AboutUs.java
+	public class FragmentAboutUs extends Fragment {
+
+    public static FragmentAboutUs newInstance(){
+        return new FragmentAboutUs();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.fragment_about_us, container, false);
+        return rootView;
+    }
+}
+
+			* fragments.Rush.java
+			* fragments.MeetABrow.java
 			
-	* MainActivityViewPager extends FragmentStatePagerAdapter
+#### B. MainActivityViewPager extends FragmentStatePagerAdapter
 		* override : 
 			* getItem
 			* getCount
 			* getPageTitle
 			
-	* Connect MainActivity with MainActivityViewPager 
-	* Binding MainActivity with ButterKnife
+#### C. Connect MainActivity with MainActivityViewPager 
+#### D. Binding MainActivity with ButterKnife
 	
 ## Refference : 
 	* http://jakewharton.github.io/butterknife/
