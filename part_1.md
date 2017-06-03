@@ -112,13 +112,80 @@
 	}
 			
 #### B. MainActivityViewPager
-		* override : 
-			* getItem
-			* getCount
-			* getPageTitle
+##### File : views.MainActivityViewPagerAdapter.java
+	public class MainActivityViewPagerAdapter extends FragmentStatePagerAdapter {
+		public MainActivityViewPagerAdapter(FragmentManager fm) {
+			super(fm);
+		}
+
+		@Override
+		public Fragment getItem(int position) {
+
+			Fragment fragmentViewPager;
+			switch (position){
+				case 0 :
+						fragmentViewPager = FragmentAboutUs.newInstance();
+					break;
+				case 1 :
+					fragmentViewPager = FragmentRush.newInstance();
+					break;
+				case 2 :
+					fragmentViewPager = MeetABrow.newInstance();
+					break;
+				default :
+					fragmentViewPager = null;
+			}
+
+			return fragmentViewPager;
+		}
+
+		@Override
+		public int getCount() {
+			return 3;
+		}
+
+		@Override
+		public CharSequence getPageTitle(int position) {
+			CharSequence title;
+			switch(position){
+				case 0 :
+					title = "About Us";
+					break;
+				case 1 :
+					title = "Rush";
+					break;
+				case 2:
+					title = "Meet A Brow";
+					break;
+				default :
+					title = null;
+			}
+
+			return title;
+		}
+	}
+
 			
 #### C. Connect MainActivity with MainActivityViewPager 
-#### D. Binding MainActivity with ButterKnife
+##### File : activity.MainActivity.java 
+	public class MainActivity extends AppCompatActivity {
+	   // @Bind
+		@BindView(R.id.activity_main_viewPager)
+		ViewPager mainViewPager;
+
+		@BindView(R.id.activity_main_tab_layout)
+		TabLayout tabLayout;
+
+		@Override
+		protected void onCreate(Bundle savedInstanceState) {
+			super.onCreate(savedInstanceState);
+			setContentView(R.layout.activity_main);
+			ButterKnife.bind(this);
+			MainActivityViewPagerAdapter adapter = new MainActivityViewPagerAdapter(getSupportFragmentManager());
+			mainViewPager.setAdapter(adapter);
+			tabLayout.setupWithViewPager(mainViewPager);
+		}
+	}
 	
 ## Refference : 
 	* http://jakewharton.github.io/butterknife/
