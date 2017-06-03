@@ -1,6 +1,6 @@
 # Android Development I (PART I) 
 
-##HELLO WORLD 
+## HELLO WORLD 
 	* First Create Android Project
 
 ## CONFIGURE BUTTERKNIFE
@@ -21,6 +21,22 @@
 
 ## CREATE FRAGMENT VIEWPAGER
 ### ViewPager File XML (View)
+#### 1. fragment_about_us.xml
+	<?xml version="1.0" encoding="utf-8"?>
+	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center"
+		>
+
+		<TextView
+			android:id="@+id/about_us"
+			android:text="About Us"
+			android:layout_width="wrap_content"
+			android:textSize="32dp"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+		
 #### Fragment_about_us.xml
 #### Fragment_rush.xml 
 #### fragment_meet_a_brow.xml
