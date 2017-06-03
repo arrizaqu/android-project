@@ -13,12 +13,28 @@
 ## Experiment List
 	* Hello World
 	* Configure ButterKnife
+	* Configuration TabLayout MainActivity
 	* Create Fragment ViewPager
 		* ViewPager File XML (View)
 		* Fragement Class
 		* MainActivityViewPager extends FragmentStatePagerAdapter
 		* Connect MainActivity with MainActivityViewPager
 		
+## Structure File : 
+	- java
+		- package 
+			- activity 
+				- MainActivity.java
+			- fragment 
+				- FragmentAboutUs.java
+				- FragmentRush.java
+				- meetABrow.java
+			- views
+				- MainActivityViewPagerAdapter.java
+	- res 
+		- layout
+			- 
+			
 ## Refference : 
 	* http://jakewharton.github.io/butterknife/
 	* https://github.com/JakeWharton/butterknife
