@@ -33,7 +33,10 @@
 				- MainActivityViewPagerAdapter.java
 	- res 
 		- layout
-			- 
+			- activity_main.xml
+			- fragment_about_us.xml
+			- fragment_meet_a_brow.xml
+			- fragment_rush.xml
 			
 ## Refference : 
 	* http://jakewharton.github.io/butterknife/
