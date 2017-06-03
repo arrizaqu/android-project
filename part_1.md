@@ -124,7 +124,7 @@
 			Fragment fragmentViewPager;
 			switch (position){
 				case 0 :
-						fragmentViewPager = FragmentAboutUs.newInstance();
+					fragmentViewPager = FragmentAboutUs.newInstance();
 					break;
 				case 1 :
 					fragmentViewPager = FragmentRush.newInstance();
